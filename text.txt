@@ -1,0 +1,47 @@
+
+Move into the "api" folder and run
+"dotnet watch run" To run this api.
+
+Hotkeys:
+Click on Interface text, Gives option to implement interface
+ctor (Make a Constructor)
+prop (Make a Property)
+
+
+To install nuget package in Visual Studio Code: CTRL + SHIFT + P => Opens the search bar
+Open the Nuget package viewer.
+
+Entity frameworks takes data like a spreadsheet and turns it into objects.
+We can work with objects in code. 1 object = 1 row.
+
+Migrations create the database for you behind the scenes.
+
+POST = Data Creation, HTTP Verb.
+(Submit JSON to the server, it goes through your code first before entering the server)
+Probably gonna use entity framework when using POST.
+
+([FromRoute] int id) is when we get things from a url.
+([FromBody])         is when we get things from data? Not a url.
+
+Make all calls to the server async (the "Remove" call does not have async).
+
+API calls should not be in our controller. Controllers should deal with the server data / response.
+
+Server calls / getting info from the servers are done in the repository classes.
+Repository is there to make database calls
+
+Each controller kindof represents a route? [Route("api/stock")]
+
+We put data-validation code & checks in our dto's. Make a new dto whenever we need another.
+
+A line of code like "_context.Stocks.ToList()" makes your code run a SQL request at the database
+
+Account = AppUser
+
+Creating a log-in system, JWT-Token and a Claims system thing
+Claims vs Roles
+Claims (List<Claim>) is basiccaly like a wallet, a lot of important information about the logged-in user
+
+
+I did reset the whole database / migrations when adding the Many-to-many system.
+
