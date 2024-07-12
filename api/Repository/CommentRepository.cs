@@ -19,12 +19,12 @@ namespace api.Properties
 
         public async Task<List<Comment>> GetAllAsync()
         {
-            return await _context.Comments.ToListAsync();
+            return await _context.Comments.Include(a => a.AppUser).ToListAsync();
         }
 
         public async Task<Comment?> GetbyIdAsync(int id)
         {
-            var r = await _context.Comments.FindAsync(id);
+            var r = await _context.Comments.Include(a => a.AppUser).FirstOrDefaultAsync(c => c.Id == id);
             return r;
         }
 

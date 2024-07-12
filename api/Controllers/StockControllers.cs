@@ -27,14 +27,13 @@ namespace api.Controllers
         }
 
         [HttpGet]
-        [Authorize]
         public async Task<IActionResult> GetAll([FromQuery] QueryObject query) {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
             
             var stocks = await _stockRepo.GetAllAsync(query);
             
-            var stockDto = stocks.Select(s => s.ToStockDto()); // Select is the same as Map
+            var stockDto = stocks.Select(s => s.ToStockDto()).ToList(); // Select is the same as Map
 
             return Ok(stockDto);
         }
@@ -54,6 +53,7 @@ namespace api.Controllers
         }
 
         [HttpPost] // Create
+        [Authorize]
         public async Task<IActionResult> Create([FromBody] CreateStockRequestDto stockDto) {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -65,6 +65,7 @@ namespace api.Controllers
         }
 
         [HttpPut] // Update
+        [Authorize]
         [Route("{id:int}")]
         public async Task<IActionResult> Update([FromRoute] int id, [FromBody] UpdateStockRequestDto updateDto) {
             if (!ModelState.IsValid)
@@ -80,6 +81,7 @@ namespace api.Controllers
         }
 
         [HttpDelete]
+        [Authorize]
         [Route("{id:int}")]
         public async Task<IActionResult> Delete([FromRoute] int id) {
             if (!ModelState.IsValid)

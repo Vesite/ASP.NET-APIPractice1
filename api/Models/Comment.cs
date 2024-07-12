@@ -24,5 +24,8 @@ namespace api.Models
          // (So we can type Stock.CompanyName)
         public Stock? Stock { get; set; }
 
+        public string AppUserId { get; set; }
+        public AppUser AppUser { get; set; }
+
     }
 }
