@@ -147,3 +147,14 @@ C:\Users\Daniel\Desktop\Folders\Code\APIPractice1\api\bin\Debug\net8.0\Microsoft
 C:\Users\Daniel\Desktop\Folders\Code\APIPractice1\api\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Daniel\Desktop\Folders\Code\APIPractice1\api\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\Daniel\Desktop\Folders\Code\APIPractice1\api\obj\Debug\net8.0\api.sourcelink.json
+C:\Users\Daniel\Desktop\Folders\Code\APIPractice1\api\bin\Debug\net8.0\api.staticwebassets.endpoints.json
+C:\Users\Daniel\Desktop\Folders\Code\APIPractice1\api\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Daniel\Desktop\Folders\Code\APIPractice1\api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Daniel\Desktop\Folders\Code\APIPractice1\api\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Daniel\Desktop\Folders\Code\APIPractice1\api\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\Daniel\Desktop\Folders\Code\APIPractice1\api\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Daniel\Desktop\Folders\Code\APIPractice1\api\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Daniel\Desktop\Folders\Code\APIPractice1\api\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\Daniel\Desktop\Folders\Code\APIPractice1\api\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Daniel\Desktop\Folders\Code\APIPractice1\api\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\Daniel\Desktop\Folders\Code\APIPractice1\api\obj\Debug\net8.0\staticwebassets\msbuild.api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props

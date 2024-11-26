@@ -47,8 +47,6 @@ builder.Services.AddSwaggerGen(option =>
     });
 });
 
-
-
 builder.Services.AddControllers();
 
 builder.Services.AddControllers().AddNewtonsoftJson(options => {
@@ -90,7 +88,6 @@ builder.Services.AddAuthentication(options => {
         )
     };
 });
-
 
 // ? We need to add our repository here "Dependency injection"
 builder.Services.AddScoped<IStockRepository, StockRepository>();

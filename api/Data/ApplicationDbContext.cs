@@ -39,8 +39,8 @@ namespace api.Data
                 .WithMany(u => u.PortFolios)
                 .HasForeignKey(p => p.StockId);
 
-            List<IdentityRole> roles = new List<IdentityRole>
-            {
+            List<IdentityRole> roles =
+            [
                 new IdentityRole {
                     Name = "User",
                     NormalizedName = "USER",
@@ -49,7 +49,7 @@ namespace api.Data
                     Name = "Admin",
                     NormalizedName = "ADMIN",
                 }
-            };
+            ];
             builder.Entity<IdentityRole>().HasData(roles);
         }
     }
