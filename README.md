@@ -1,5 +1,6 @@
 Practicing Creating an API using ASP.NET Core Web API .NET 8.0
 
+Open the Solution file in Visual Studio, or open the folder in Visual Studio Code
 
 Move to "APIPractice1\api", where the .csproj is and "dotnet watch run" to run the program
 
